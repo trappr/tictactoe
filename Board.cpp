@@ -168,7 +168,7 @@ State Board::gameState()
 void Board::printBoard()
 {
     //Nested for loop to print out contents of locationChar array
-
+    std::cout << std::endl;
     for (int row = 0; row < 3; row++)
     {
         for (int col = 0; col < 3; col++)
@@ -179,4 +179,5 @@ void Board::printBoard()
 
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
