@@ -169,15 +169,22 @@ void Board::printBoard()
 {
     //Nested for loop to print out contents of locationChar array
     std::cout << std::endl;
+    std::cout << "     *******COLUMNS*******" << std::endl;
+    std::cout << "        0   " << "    1   " << "    2  " << std::endl;
+    std::cout << std::endl;
     for (int row = 0; row < 3; row++)
     {
+        std::cout << "  " << row;
         for (int col = 0; col < 3; col++)
         {
-            std::cout << std::setw(5) << " | " << locationChar[row][col];
+            std::cout << " |   " << locationChar[row][col] << "  ";
 
         }
 
-        std::cout << std::endl;
+        if (row != 2)
+        {
+            std::cout << std::endl << "  -------------------------" << std::endl;
+        }
     }
-    std::cout << std::endl;
+    std::cout << "\n\n\n";
 }
